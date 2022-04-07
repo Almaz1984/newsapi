@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="8dp"
     android:layout_marginTop="8dp"
-    android:background="@color/white"
     android:orientation="vertical"
     app:cardCornerRadius="4dp">
 
@@ -22,25 +21,11 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="4dp"
             android:contentDescription="@string/news_image"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
             android:src="@drawable/news_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/news_image_fade"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginEnd="4dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_fade"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/newsTitle"
