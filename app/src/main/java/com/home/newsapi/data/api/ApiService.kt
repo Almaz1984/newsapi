@@ -10,13 +10,13 @@ interface ApiService {
     @GET("top-headlines")
     suspend fun loadNews(
         @Query("country") countryCode: String = COUNTRY_CODE,
-        @Query("page") pageNumber: String = PAGE_SIZE,
+        @Query("page") pageNumber: String = PAGE_NUMBER,
         @Query("apiKey") apiKey: String = API_KEY
     ): Response<NewsResponse>
 
     companion object {
         const val API_KEY = "3794f2e1f135498b83ca151a3b5ce44c"
-        const val PAGE_SIZE = "1"
+        const val PAGE_NUMBER = "1"
         const val COUNTRY_CODE = "ru"
     }
 }
